@@ -6,6 +6,7 @@ Install via PIP
 pip install cmathlib
 ```
 
-Install via GitHub
+[Install via GitHub](https://github.com/CaidynPaul/Python-Resources.git)
+
 
 <!-- Insert Github Download link []() -->
