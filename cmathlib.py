@@ -1,5 +1,5 @@
 class cmathcalc():
-    def __init__(self, Normal, Sqrt, Cbrt):
+    def __init__(self, Normal, Sqrt, Cbrt, fort, ffrt, sxrt, svrt, egrt):
         self.Normal = Normal
         self.Sqrt = Sqrt
         self.Cbrt = Cbrt
@@ -24,6 +24,36 @@ class cmathcalc():
             return int(a**(1/3))
         else:
             return a**(1/3)
+    def fort(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/4))
+        else:
+            return a**(1/4)
+    def ffrt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/5))
+        else:
+            return a**(1/5)
+    def sxrt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/6))
+        else:
+            return a**(1/6)
+    def svrt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/7))
+        else:
+            return a**(1/7)
+    def egrt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/8))
+        else:
+            return a**(1/8)
 
 def Help():
     print('''Possible Commands and their arguments:
