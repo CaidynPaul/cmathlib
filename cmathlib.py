@@ -24,31 +24,31 @@ class cmathcalc():
             return int(a**(1/3))
         else:
             return a**(1/3)
-    def fort(item, noDecimal = False):
+    def Fort(item, noDecimal = False):
         a =  float(item)
         if noDecimal == True:
             return int(a**(1/4))
         else:
             return a**(1/4)
-    def ffrt(item, noDecimal = False):
+    def Ffrt(item, noDecimal = False):
         a =  float(item)
         if noDecimal == True:
             return int(a**(1/5))
         else:
             return a**(1/5)
-    def sxrt(item, noDecimal = False):
+    def Sxrt(item, noDecimal = False):
         a =  float(item)
         if noDecimal == True:
             return int(a**(1/6))
         else:
             return a**(1/6)
-    def svrt(item, noDecimal = False):
+    def Svrt(item, noDecimal = False):
         a =  float(item)
         if noDecimal == True:
             return int(a**(1/7))
         else:
             return a**(1/7)
-    def egrt(item, noDecimal = False):
+    def Egrt(item, noDecimal = False):
         a =  float(item)
         if noDecimal == True:
             return int(a**(1/8))
