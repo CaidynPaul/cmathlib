@@ -1,9 +1,4 @@
 class cmathcalc():
-    def __init__(self, Normal, Sqrt, Cbrt, fort, ffrt, sxrt, svrt, egrt):
-        self.Normal = Normal
-        self.Sqrt = Sqrt
-        self.Cbrt = Cbrt
-
     def Normal(expression, noDecimal = False):
         a = float(expression)
         if noDecimal == True:
@@ -54,12 +49,58 @@ class cmathcalc():
             return int(a**(1/8))
         else:
             return a**(1/8)
+    def Nirt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/9))
+        else:
+            return a**(1/9)
+    def Tenrt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/10))
+        else:
+            return a**(1/10)
+    def Elert(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/11))
+        else:
+            return a**(1/11)
+    def Twert(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/12))
+        else:
+            return a**(1/12)
+    def Thtrt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/13))
+        else:
+            return a**(1/13)
+    def Fotrt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/14))
+        else:
+            return a**(1/14)
+    def Fifrt(item, noDecimal = False):
+        a =  float(item)
+        if noDecimal == True:
+            return int(a**(1/15))
+        else:
+            return a**(1/15)
 
 def Help():
     print('''Possible Commands and their arguments:
     cmathcalc.Normal(expression, True/False)
     cmathcalc.Sqrt(item,True/False)
-    cmathcalc.Cbrt(item, True/False)''')
+    cmathcalc.Fort(item, True/False)
+    cmathcalc.Ffrt(item, True/False)
+    cmathcalc.Sxrt(item, True/False)
+    cmathcalc.Svrt(item, True/False)
+    cmathcalc.Egrt(item, True/False)''')
 
 def main():
     print("> Hello from the Cyber Community o7")
