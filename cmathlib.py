@@ -100,7 +100,17 @@ def Help():
     cmathcalc.Ffrt(item, True/False)
     cmathcalc.Sxrt(item, True/False)
     cmathcalc.Svrt(item, True/False)
-    cmathcalc.Egrt(item, True/False)''')
+    cmathcalc.Egrt(item, True/False)
+    cmathcalc.Nirt(item, True/False)
+    cmathcalc.Tenrt(item, True/False)
+    cmathcalc.Elert(item, True/False)
+    cmathcalc.Twert(item, True/False)
+    cmathcalc.Thtrt(item, True/False)
+    cmathcalc.Fotrt(item, True/False)
+    cmathcalc.Fifrt(item, True/False)''')
+    print('''
+    Note that all root commands above and inclusive of ten consist of Five Letters
+    ''')
 
 def main():
     print("> Hello from the Cyber Community o7")
