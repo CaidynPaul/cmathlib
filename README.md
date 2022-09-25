@@ -11,3 +11,11 @@
 
 ### __.\ v1.0.1\\\\__
 * Max amount of roots: 15
+
+### __.\ v1.0.2\\__
+* Added Class roots to store all root functions
+
+---
+
+## [Discord](https://discord.gg/5sAd4mQvRZ)
+pls join
