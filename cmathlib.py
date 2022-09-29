@@ -1,3 +1,11 @@
+# Sneaky Imports
+from math import sin as Sine
+from math import cos as Cosine
+from math import tan as Tangent
+from math import sinh as Hypesine
+from math import cosh as HypeCosine
+from math import tanh as HypeTangent
+
 class cmathcalc():
     def Normal(expression, noDecimal = False):
         a = float(expression)
@@ -5,6 +13,13 @@ class cmathcalc():
             return int(a)
         else:
             return a
+    def Power(expression, power, noDecimal = False):
+        a = float(expression)
+        b = a**power
+        if noDecimal == True:
+            return int(b)
+        else:
+            return b
     class roots():
         def Sqrt(item, noDecimal = False):
             a =  float(item)
