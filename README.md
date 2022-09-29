@@ -21,5 +21,4 @@
     * Power Function takes in an ```expression```, and a ```power``` argument
 ---
 
-## [Discord](https://discord.gg/5sAd4mQvRZ)
-pls join
+use [github wiki](https://github.com/CaidynPaul/cmathlib/wiki) or Join the [Discord](https://discord.gg/5sAd4mQvRZ) If you have any Questions
