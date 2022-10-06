@@ -19,6 +19,9 @@
 ### __.\ v1.0.3\\\\__
 * Added Power Function
     * Power Function takes in an ```expression```, and a ```power``` argument
+
+### __.\ v1.0.4\\\\__
+* Changed ```print()``` in ```Help()``` to ```return()```
 ---
 
 use [github wiki](https://github.com/CaidynPaul/cmathlib/wiki) or Join the [Discord](https://discord.gg/5sAd4mQvRZ) If you have any Questions
