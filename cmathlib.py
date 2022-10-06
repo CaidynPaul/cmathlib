@@ -108,7 +108,7 @@ class cmathcalc():
                 return a**(1/15)
  
 def Help():
-    print('''Possible Commands and their arguments:
+    return('''Possible Commands and their arguments:
     cmathcalc.Normal(expression, True/False)
     cmathcalc.Sqrt(item,True/False)
     cmathcalc.Fort(item, True/False)
@@ -122,13 +122,12 @@ def Help():
     cmathcalc.Twert(item, True/False)
     cmathcalc.Thtrt(item, True/False)
     cmathcalc.Fotrt(item, True/False)
-    cmathcalc.Fifrt(item, True/False)''')
-    print('''
+    cmathcalc.Fifrt(item, True/False)
     Note that all root commands above and inclusive of ten consist of Five Letters
     ''')
 
 def main():
     print("> Hello from the Cyber Community o7")
-
+    
 if not __name__ == '__main__':
     main()
