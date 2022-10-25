@@ -125,6 +125,18 @@ def Help():
     cmathcalc.Fifrt(item, True/False)
     Note that all root commands above and inclusive of ten consist of Five Letters
     ''')
+class cmathconvert():
+
+    def ToSecond(amount,origin):
+        if origin.lower() == "milliseconds" or origin.lower() == "millisecond":
+            return amount / 1000
+        if origin.lower() == "minutes" or origin.lower() == "minutes":
+            return amount * 60
+        if origin.lower() == "hours" or origin.lower() == "hour":
+            return amount *60 *60
+        if origin.lower() == "days" or origin.lower() == "day":
+            return amount *60 *60 *24
+
 
 def main():
     print("> Hello from the Cyber Community o7")
