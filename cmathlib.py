@@ -2,7 +2,7 @@
 from math import sin as Sine
 from math import cos as Cosine
 from math import tan as Tangent
-from math import sinh as Hypesine
+from math import sinh as HypeSine
 from math import cosh as HypeCosine
 from math import tanh as HypeTangent
 
