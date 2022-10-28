@@ -138,7 +138,7 @@ class cmathconvert():
             return amount *60 *60 *24
 
 class cmathutil():
-    def bubble(arr):
+    def Bubble(arr):
         n =  len(arr)
         swapped = True
         while n > 0 and swapped == True:
