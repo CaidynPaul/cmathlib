@@ -137,7 +137,19 @@ class cmathconvert():
         if origin.lower() == "days" or origin.lower() == "day":
             return amount *60 *60 *24
 
-
+class cmathutil():
+    def bubble(arr):
+        n =  len(arr)
+        swapped = True
+        while n > 0 and swapped == True:
+            swapped = False
+            n -= 1
+        
+        for i in range(n):
+            if arr[i] > arr[i+1]:
+                arr[i],arr[i+1]=arr[i+1],arr[i]
+                swapped = True
+        return arr
 def main():
     print("> Hello from the Cyber Community o7")
     
