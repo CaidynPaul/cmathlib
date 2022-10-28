@@ -145,10 +145,10 @@ class cmathutil():
             swapped = False
             n -= 1
         
-        for i in range(n):
-            if arr[i] > arr[i+1]:
-                arr[i],arr[i+1]=arr[i+1],arr[i]
-                swapped = True
+            for i in range(n):
+                if arr[i] > arr[i+1]:
+                    arr[i],arr[i+1]=arr[i+1],arr[i]
+                    swapped = True
         return arr
 def main():
     print("> Hello from the Cyber Community o7")
