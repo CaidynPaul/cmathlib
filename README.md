@@ -27,6 +27,9 @@
 * Added ```cmathconvert``` currently can only convert time values to seconds.
 * Very Limited Functionality. Will add more functionality in the future.
 
+### __.\ v1.0.6\\\\__
+* Added ```cmathutil``` currently has a bubble sort algorithm
+   * Check Wiki for more information
 ---
 
 use [github wiki](https://github.com/CaidynPaul/cmathlib/wiki) or Join the [Discord](https://discord.gg/5sAd4mQvRZ) If you have any Questions.
