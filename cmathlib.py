@@ -2,24 +2,35 @@
 from math import sin as Sine
 from math import cos as Cosine
 from math import tan as Tangent
-from math import sinh as HypeSine
+from math import sinh as Hypesine
 from math import cosh as HypeCosine
 from math import tanh as HypeTangent
 
 class cmathcalc():
-    def Normal(expression, noDecimal = False):
+    def Normal(expression, noDecimal = False, units=" "):
         a = float(expression)
         if noDecimal == True:
-            return int(a)
+            return str(int(a))+" "+units
         else:
-            return a
+            return str(a)+" "+units
     def Power(expression, power, noDecimal = False):
+        
         a = float(expression)
         b = a**power
         if noDecimal == True:
             return int(b)
         else:
             return b
+    # Constants
+    pi = 3.14159265359
+    mole = 2.06*(10**23)
+    constants = {
+        "pi" : 3.14159265359,
+        "pythagorus": 1.41421356237,
+        "theodorus" : 1.73205080757,
+        "euler": 1.73205080757
+    }
+    # -----------------------
     class roots():
         def Sqrt(item, noDecimal = False):
             a =  float(item)
@@ -106,10 +117,10 @@ class cmathcalc():
                 return int(a**(1/15))
             else:
                 return a**(1/15)
- 
+
 def Help():
     return('''Possible Commands and their arguments:
-    cmathcalc.Normal(expression, True/False)
+    cmathcalc.Normal(expression, True/False, units)
     cmathcalc.Sqrt(item,True/False)
     cmathcalc.Fort(item, True/False)
     cmathcalc.Ffrt(item, True/False)
@@ -124,18 +135,12 @@ def Help():
     cmathcalc.Fotrt(item, True/False)
     cmathcalc.Fifrt(item, True/False)
     Note that all root commands above and inclusive of ten consist of Five Letters
-    ''')
-class cmathconvert():
+-------------------------------------------------------------------------------------
+    cmathutil
+    Bubble(arr) 
 
-    def ToSecond(amount,origin):
-        if origin.lower() == "milliseconds" or origin.lower() == "millisecond":
-            return amount / 1000
-        if origin.lower() == "minutes" or origin.lower() == "minutes":
-            return amount * 60
-        if origin.lower() == "hours" or origin.lower() == "hour":
-            return amount *60 *60
-        if origin.lower() == "days" or origin.lower() == "day":
-            return amount *60 *60 *24
+    where arr is an array
+    ''')
 
 class cmathutil():
     def Bubble(arr):
