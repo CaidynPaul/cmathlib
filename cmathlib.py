@@ -22,8 +22,6 @@ class cmathcalc():
         else:
             return b
     # Constants
-    pi = 3.14159265359
-    mole = 2.06*(10**23)
     constants = {
         "pi" : 3.14159265359,
         "pythagorus": 1.41421356237,
