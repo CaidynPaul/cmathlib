@@ -1,13 +1,9 @@
 # Sneaky Imports
-from math import sin as Sine
-from math import cos as Cosine
-from math import tan as Tangent
-from math import sinh as Hypesine
-from math import cosh as HypeCosine
-from math import tanh as HypeTangent
+import math
 
+print("Hello from the Cyber Community o7")
 class cmathcalc():
-    def Normal(expression, noDecimal = False, units=" "):
+    def Normal(expression, noDecimal = False, units=""):
         a = float(expression)
         if noDecimal == True:
             return str(int(a))+" "+units
@@ -23,11 +19,23 @@ class cmathcalc():
             return b
     # Constants
     constants = {
-        "pi" : 3.14159265359,
-        "pythagorus": 1.41421356237,
-        "theodorus" : 1.73205080757,
-        "euler": 1.73205080757
+        "pi" : 3.14159265358979323846264338327950,
+        "pythagorus": 1.4142135623730950488016887242096980785696718753769480731766797379907324784621,
+        "theodorus" : 1.7320508075688772935274463415058723669428052538103806280558069794,
+        "euler": 0.5772156649015328606065120900824024310421593359399235988057672348
     }
+    def Sine(x):
+        return math.sin(math.radians(x))
+    def Cosine(x):
+        return math.cos(math.radians(x))
+    def Tang(x):
+        return math.tan(math.radians(x))
+    def InvSine(x):
+        return math.degrees(math.asin(x))
+    def InvCosine(x):
+        return math.degrees(math.acos(x))
+    def InvTang(x):
+        return math.degrees(math.atan(x))
     # -----------------------
     class roots():
         def Sqrt(item, noDecimal = False):
@@ -115,7 +123,7 @@ class cmathcalc():
                 return int(a**(1/15))
             else:
                 return a**(1/15)
-
+    print("Calculator Initiated")
 def Help():
     return('''Possible Commands and their arguments:
     cmathcalc.Normal(expression, True/False, units)
@@ -153,8 +161,12 @@ class cmathutil():
                     arr[i],arr[i+1]=arr[i+1],arr[i]
                     swapped = True
         return arr
-def main():
-    print("> Hello from the Cyber Community o7")
-    
-if not __name__ == '__main__':
-    main()
+    def ConvBase(x,base=None):
+        if base == 2:
+            return bin(x)
+        elif base == 10:
+            return float(x)
+        elif base == 16:
+            return hex(x)
+        elif base==None:
+            return bin(x)
