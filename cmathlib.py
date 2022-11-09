@@ -140,6 +140,12 @@ def Help():
     cmathcalc.Thtrt(item, True/False)
     cmathcalc.Fotrt(item, True/False)
     cmathcalc.Fifrt(item, True/False)
+    cmathcalc.Sine(x) requires value in degrees not radians
+    cmathcalc.Cosine(x) requires value in degrees not radians
+    cmathcalc.Tang(x) requires value in degrees not radians
+    cmathcalc.InvSine(x) returns value in degrees not radians
+    cmathcalc.InvCosine(x) returns value in degrees not radians
+    cmathcalc.InvTang(x) returns value in degrees not radians
     Note that all root commands above and inclusive of ten consist of Five Letters
 -------------------------------------------------------------------------------------
     cmathutil
