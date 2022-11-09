@@ -31,6 +31,12 @@
 * Added ```cmathutil``` currently has a bubble sort algorithm
    * Check Wiki for more information
    * Created ```__init__.py``` for modular use
+   
+### __.\ v1.0.7\\\\__
+* Added Trignometric Functions
+   * `Sine`,`Cosine`,`Tang`,`InvSine`,`InvCosine`,`InvTang`
+* Added Conversion Function between Base `2`,`10` and `16`
+   * AKA Binary, Denary, Hexadecimal.
 ---
 
 use [github wiki](https://github.com/CaidynPaul/cmathlib/wiki) or Join the [Discord](https://discord.gg/5sAd4mQvRZ) If you have any Questions.
