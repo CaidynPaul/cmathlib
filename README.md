@@ -35,6 +35,7 @@
 ### __.\ v1.0.7\\\\__
 * Added Trignometric Functions
    * `Sine`,`Cosine`,`Tang`,`InvSine`,`InvCosine`,`InvTang`
+   * Functions work in degrees not radians.
 * Added Conversion Function between Base `2`,`10` and `16`
    * AKA Binary, Denary, Hexadecimal.
 ---
