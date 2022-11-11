@@ -33,6 +33,7 @@
    * Created ```__init__.py``` for modular use
    
 ### __.\ v1.0.7\\\\__
+* Added Constants: `pi`,`euler`,`pythagorus`,`theodorus` - `3.1415...`, `0.57721566490...`,`sqrt 2`,`sqrt 3`
 * Added Trignometric Functions
    * `Sine`,`Cosine`,`Tang`,`InvSine`,`InvCosine`,`InvTang`
    * Functions work in degrees not radians.
