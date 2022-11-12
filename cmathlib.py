@@ -1,5 +1,6 @@
 # Sneaky Imports
 import math
+import random
 
 print("Hello from the Cyber Community o7")
 class cmathcalc():
@@ -176,3 +177,6 @@ class cmathutil():
             return hex(x)
         elif base==None:
             return bin(x)
+
+randommsgs = ["https://discord.gg/5sAd4mQvRZ","Support Duck Supremacy","Remember to hydrate","Remember, stay out of the fire yea, super high level tactic yea, gotta remember that."]
+print(random.choice(randommsgs))
