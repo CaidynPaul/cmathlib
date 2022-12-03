@@ -40,6 +40,11 @@
 * Added Conversion Function between Base `2`,`10` and `16`
    * AKA Binary, Denary, Hexadecimal.
 * Removed `cmathconv` class.
+
+### __.\ v1.0.8\\\\__
+* Added `Fibonacci` Function. Calculates the fibonacci number at `n`.
+   * `Fibonacci` uses memoization decorator to speed up calculation.
+* Added `irange` and `xrange` function which modify python's defaulf range function
 ---
 
 use [github wiki](https://github.com/CaidynPaul/cmathlib/wiki) or Join the [Discord](https://discord.gg/5sAd4mQvRZ) If you have any Questions.
