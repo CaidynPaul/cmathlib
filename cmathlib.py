@@ -1,7 +1,8 @@
 # Sneaky Imports
 import math
 import random
-
+import sys
+from functools import wraps
 print("Hello from the Cyber Community o7")
 class cmathcalc():
     def Normal(expression, noDecimal = False, units=""):
@@ -11,13 +12,30 @@ class cmathcalc():
         else:
             return str(a)+" "+units
     def Power(expression, power, noDecimal = False):
-        
+
         a = float(expression)
         b = a**power
         if noDecimal == True:
             return int(b)
         else:
             return b
+    
+    def memoize(func):
+        cache = {}
+
+        @wraps(func)
+        def wrapper(*args,**kwargs):
+            key = str(args)+str(kwargs)
+            if key not in cache:
+                cache[key] = func(*args,**kwargs)
+            return cache[key]
+        return wrapper
+    @memoize
+    def Fibonacci(n):
+        if n < 2: 
+            return n
+        return cmathcalc.Fibonacci(n - 1) + cmathcalc.Fibonacci(n - 2)
+        
     # Constants
     constants = {
         "pi" : 3.14159265358979323846264338327950,
@@ -150,7 +168,7 @@ def Help():
     Note that all root commands above and inclusive of ten consist of Five Letters
 -------------------------------------------------------------------------------------
     cmathutil
-    Bubble(arr) 
+    Bubble(arr)
 
     where arr is an array
     ''')
@@ -162,7 +180,7 @@ class cmathutil():
         while n > 0 and swapped == True:
             swapped = False
             n -= 1
-        
+
             for i in range(n):
                 if arr[i] > arr[i+1]:
                     arr[i],arr[i+1]=arr[i+1],arr[i]
