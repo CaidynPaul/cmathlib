@@ -30,6 +30,7 @@ class cmathcalc():
                 cache[key] = func(*args,**kwargs)
             return cache[key]
         return wrapper
+    sys.setrecursionlimit(100000)
     @memoize
     def Fibonacci(n):
         if n < 2: 
@@ -195,6 +196,12 @@ class cmathutil():
             return hex(x)
         elif base==None:
             return bin(x)
+
+def irange(min,max,step=1):
+    return range(min,max+1,step)
+def xrange(min,max,step=1):
+    return range(min+1,max,step)
+
 
 randommsgs = ["https://discord.gg/5sAd4mQvRZ","Support Duck Supremacy","Remember to hydrate","Remember, stay out of the fire yea, super high level tactic yea, gotta remember that. - Valorant Phoenix", "If it tastes disgusting don't eat it!", "One Calculation at a time", "Support Duck Supremacy","This is a random Message","Hello World","'Hello World' - A Devs First Words"]
 print(random.choice(randommsgs))
