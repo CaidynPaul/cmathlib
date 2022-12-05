@@ -12,7 +12,10 @@ The following are the versions that will be supported over at [The Discord Serve
 | 1.0.3   | :x:                |
 | 1.0.4   | :x:                |
 | 1.0.5   | :x:                |
-| >1.0.6   | :white_check_mark: |
+| 1.0.6   | :white_check_mark: |
+| 1.0.7   | :white_check_mark: |
+| 1.0.8   | :white_check_mark: |
+| 1.0.9   | :warning: In Development|
 
 ## Reporting a Vulnerability
 
