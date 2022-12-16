@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The following are the versions that will be supported over at [The Discord Server](https://discord.gg/5sAd4mQvRZ)
+The following are the versions that will be supported over at [*The Discord Server](https://discord.gg/5sAd4mQvRZ)
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -19,6 +19,8 @@ The following are the versions that will be supported over at [The Discord Serve
 
 ## Reporting a Vulnerability
 
-To report a vulnerability head over to [The Discord Server](https://discord.gg/5sAd4mQvRZ)
+To report a vulnerability head over to [*The Discord Server](https://discord.gg/5sAd4mQvRZ)
 and create a ticket in #public-ticket. we should respond to you in a couple of mins/hours
 
+---
+#### * The Discord Server is currently called Duck Army
