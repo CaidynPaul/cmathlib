@@ -4,11 +4,13 @@ import random
 import sys
 from functools import wraps
 print("Hello from the Cyber Community o7")
+def _0xround(item):
+    round(item,0)
 class cmathcalc():
     def Normal(expression, noDecimal = False, units=""):
         a = float(expression)
         if noDecimal == True:
-            return str(int(a))+" "+units
+            return str(_0xround(a))+" "+units
         else:
             return str(a)+" "+units
     def Power(expression, power, noDecimal = False):
@@ -16,7 +18,7 @@ class cmathcalc():
         a = float(expression)
         b = a**power
         if noDecimal == True:
-            return int(b)
+            return _0xround(b)
         else:
             return b
     
@@ -30,19 +32,21 @@ class cmathcalc():
                 cache[key] = func(*args,**kwargs)
             return cache[key]
         return wrapper
-    sys.setrecursionlimit(100000)
+    sys.setrecursionlimit(900000)
     @memoize
     def Fibonacci(n):
         if n < 2: 
             return n
         return cmathcalc.Fibonacci(n - 1) + cmathcalc.Fibonacci(n - 2)
         
+
     # Constants
     constants = {
         "pi" : 3.14159265358979323846264338327950,
         "pythagorus": 1.4142135623730950488016887242096980785696718753769480731766797379907324784621,
         "theodorus" : 1.7320508075688772935274463415058723669428052538103806280558069794,
-        "euler": 0.5772156649015328606065120900824024310421593359399235988057672348
+        "euler": 0.5772156649015328606065120900824024310421593359399235988057672348,
+        "mole": 6.02214179*(10**23)
     }
     def Sine(x):
         return math.sin(math.radians(x))
@@ -61,118 +65,97 @@ class cmathcalc():
         def Sqrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/2))
+                return _0xround(a**(1/2))
             else:
                 return a**(1/2)
 
         def Cbrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/3))
+                return _0xround(a**(1/3))
             else:
                 return a**(1/3)
         def Fort(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/4))
+                return _0xround(a**(1/4))
             else:
                 return a**(1/4)
         def Ffrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/5))
+                return _0xround(a**(1/5))
             else:
                 return a**(1/5)
         def Sxrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/6))
+                return _0xround(a**(1/6))
             else:
                 return a**(1/6)
         def Svrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/7))
+                return _0xround(a**(1/7))
             else:
                 return a**(1/7)
         def Egrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/8))
+                return _0xround(a**(1/8))
             else:
                 return a**(1/8)
         def Nirt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/9))
+                return _0xround(a**(1/9))
             else:
                 return a**(1/9)
         def Tenrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/10))
+                return _0xround(a**(1/10))
             else:
                 return a**(1/10)
         def Elert(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/11))
+                return _0xround(a**(1/11))
             else:
                 return a**(1/11)
         def Twert(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/12))
+                return _0xround(a**(1/12))
             else:
                 return a**(1/12)
         def Thtrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/13))
+                return _0xround(a**(1/13))
             else:
                 return a**(1/13)
         def Fotrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/14))
+                return _0xround(a**(1/14))
             else:
                 return a**(1/14)
         def Fifrt(item, noDecimal = False):
             a =  float(item)
             if noDecimal == True:
-                return int(a**(1/15))
+                return _0xround(a**(1/15))
             else:
                 return a**(1/15)
+        def Sxtrt(item, noDecimal = False):
+            a =  float(item)
+            if noDecimal == True:
+                return _0xround(a**(1/16))
+            else:
+                return a**(1/16)
     print("Calculator Initiated")
 def Help():
-    return('''Possible Commands and their arguments:
-    cmathcalc.Normal(expression, True/False, units)
-    cmathcalc.Sqrt(item,True/False)
-    cmathcalc.Fort(item, True/False)
-    cmathcalc.Ffrt(item, True/False)
-    cmathcalc.Sxrt(item, True/False)
-    cmathcalc.Svrt(item, True/False)
-    cmathcalc.Egrt(item, True/False)
-    cmathcalc.Nirt(item, True/False)
-    cmathcalc.Tenrt(item, True/False)
-    cmathcalc.Elert(item, True/False)
-    cmathcalc.Twert(item, True/False)
-    cmathcalc.Thtrt(item, True/False)
-    cmathcalc.Fotrt(item, True/False)
-    cmathcalc.Fifrt(item, True/False)
-    cmathcalc.Sine(x) requires value in degrees not radians
-    cmathcalc.Cosine(x) requires value in degrees not radians
-    cmathcalc.Tang(x) requires value in degrees not radians
-    cmathcalc.InvSine(x) returns value in degrees not radians
-    cmathcalc.InvCosine(x) returns value in degrees not radians
-    cmathcalc.InvTang(x) returns value in degrees not radians
-    Note that all root commands above and inclusive of ten consist of Five Letters
--------------------------------------------------------------------------------------
-    cmathutil
-    Bubble(arr)
-
-    where arr is an array
-    ''')
+    print('Github Wiki Page :https://github.com/CaidynPaul/cmathlib/wiki')
 
 class cmathutil():
     def Bubble(arr):
@@ -202,6 +185,8 @@ def irange(min,max,step=1):
 def xrange(min,max,step=1):
     return range(min+1,max,step)
 
+if __name__ == '__main__':
+    Help()
 
-randommsgs = ["https://discord.gg/5sAd4mQvRZ","Support Duck Supremacy","Remember to hydrate","Remember, stay out of the fire yea, super high level tactic yea, gotta remember that. - Valorant Phoenix", "If it tastes disgusting don't eat it!", "One Calculation at a time", "Support Duck Supremacy","This is a random Message","Hello World","'Hello World' - A Devs First Words"]
+randommsgs = ["https://discord.gg/5sAd4mQvRZ","Support Duck Supremacy","Remember to hydrate", "If it tastes disgusting don't eat it!", "One Calculation at a time", "Support Duck Supremacy","This is a random Message","Hello World","'Hello World' - A Devs First Words"]
 print(random.choice(randommsgs))
